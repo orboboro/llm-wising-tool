@@ -42,4 +42,4 @@ embedding_matrix = load_embedding_matrix("embeddings.npy")
 query = "What about working exploitation in AI industry?"
 
 query = "What about working exploitation in AI industry?"
-huggingface_API_calling(query = query, embedding_matrix = embedding_matrix, model = "meta-llama/Llama-3.3-70B-Instruct", RAG = True)
+huggingface_API_calling(query = query, embedding_matrix = embedding_matrix, model = "meta-llama/Llama-3.3-70B-Instruct", temperature = 0.2, RAG = True)
