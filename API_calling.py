@@ -26,6 +26,8 @@ def huggingface_API_calling(query, embedding_matrix, model, temperature = 0, RAG
                 }
     ]
 
+    # è necessario avere un file .env in cui aver definito la variabile API_KEY col valore della chiave che stiamo utilizzando
+
     dotenv_path = find_dotenv()
     load_dotenv(dotenv_path)
     API_KEY = os.getenv("API_KEY")
@@ -55,6 +57,3 @@ def huggingface_API_calling(query, embedding_matrix, model, temperature = 0, RAG
 
     with open(f"replies/{rag_flag}{timestamp}.txt", "w", encoding = "utf-8") as reply_file:
         reply_file.write(f"SYSTEM PROMPT:\n{system_prompt}\n\nQUERY:\n{query}\n\nREPLY:\n{reply}{knowledge_base}")
-
-
-#gg
