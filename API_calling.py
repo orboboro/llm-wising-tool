@@ -57,3 +57,4 @@ def huggingface_API_calling(query, embedding_matrix, model, temperature = 0, RAG
         reply_file.write(f"SYSTEM PROMPT:\n{system_prompt}\n\nQUERY:\n{query}\n\nREPLY:\n{reply}{knowledge_base}")
 
 
+#gg
